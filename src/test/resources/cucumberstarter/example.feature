@@ -6,6 +6,6 @@ Feature: Order a coffee
 
   Scenario: Buyers order a coffee when they are close to the coffee shop
     Given Cathy is 100 meters from the coffee shop
-    When Cathy orders a large cappucino
+    When Cathy orders a large cappuccino
     Then Barry should receive the order
     And Barry should know that the coffee is Urgent
