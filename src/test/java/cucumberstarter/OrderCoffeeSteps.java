@@ -29,4 +29,8 @@ public class OrderCoffeeSteps {
     public void barry_should_know_that_the_coffee_is_urgent() {
         assertThat(barry.getUrgentOrders(), hasItem(cathysOrder));
     }
+    public void deneme(){
+
+    }
+
 }
