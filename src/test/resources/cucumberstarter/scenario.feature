@@ -13,7 +13,7 @@ Feature: Order a coffee
       Then Barry should receive the order
       And He should know that the coffee is <status>
       Examples:
-      |distance|status|
-      |100|urgent|
-      |300|normal|
-      |1000|low|
+      | Rule                      |distance|status|
+      | More than 10 minutes away |1000|low|
+      | Between 5 and 10 minutes  |300|normal|
+      | Less than 5 minutes       |100|urgent|
