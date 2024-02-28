@@ -39,6 +39,15 @@ public class ListOrMapSteps {
 
     @Then("the order should contain the following products:")
     public void the_order_should_contain_the_following_products(DataTable dataTable) {
+        List<String> list = dataTable.asList();
+        System.out.println(list);
+        System.out.println(list.get(0));
+        System.out.println(list.get(1));
+
+        for (String s : list) {
+            System.out.println(s);
+
+        }
 
     }
 
