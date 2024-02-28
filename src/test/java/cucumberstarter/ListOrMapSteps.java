@@ -43,12 +43,10 @@ public class ListOrMapSteps {
         System.out.println(list);
         System.out.println(list.get(0));
         System.out.println(list.get(1));
-
+            // or
         for (String s : list) {
             System.out.println(s);
-
         }
-
     }
 
     @Then("He should know that the coffee is: {string}")
