@@ -1,5 +1,5 @@
 @sprint-1
-  @issue:CRED-7
+@issue:CRED-7
 Feature: Order a coffee more
   In order to save time when I pick up my morning coffee
   As a coffee lover
