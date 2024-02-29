@@ -13,7 +13,7 @@ Feature: Order a coffee more
     When "Cathy" orders a "large cappuccino"
     Then Barry should receive the order
     And He should know that the coffee is Urgent
-@smoketest
+@smokingtest
   Scenario: Buyer orders a coffee when they are far to the coffee shop
     And "John" is 300 meters from the coffee shop
     When "Cathy" orders for following items

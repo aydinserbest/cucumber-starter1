@@ -101,6 +101,10 @@
                 </dependencies>
                 <executions>
                     <execution>
+                        <id>check-gherkin</id>
+                        <phase>process-test-resources</phase>
+                    </execution>
+                    <execution>
                         <id>serenity-reports</id>
                         <phase>post-integration-test</phase>
                         <goals>

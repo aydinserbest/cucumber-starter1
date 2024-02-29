@@ -7,6 +7,7 @@ Feature: list or map
   Background:
     Given Cathy has a Caffeinate-Me account
 
+    @smokingtest
   Scenario: Buyer orders a coffee when they are far to the coffee shop
     And John is 300 meters from the coffee shop
     # asLists
