@@ -1,3 +1,4 @@
+@billing
 Feature: Order a coffee
   In order to save time when I pick up my morning coffee
   As a coffee lover

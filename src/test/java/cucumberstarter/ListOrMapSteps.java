@@ -55,4 +55,13 @@ public class ListOrMapSteps {
     }
 
 
+    @And("Mike orders for following items")
+    public void mikeOrdersForFollowingItems(List<Map<String, String>> order) {
+        System.out.println("without using data table ");
+        for (Map<String, String> name : order) {
+
+            System.out.println(name.get("product")+" "+name.get("quantity"));
+
+        }
+    }
 }
