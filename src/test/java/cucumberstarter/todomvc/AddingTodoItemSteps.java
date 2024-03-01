@@ -1,10 +1,11 @@
-package cucumberstarter.todoList;
+package cucumberstarter.todomvc;
 
 import io.cucumber.java.After;
 import io.cucumber.java.Before;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
@@ -20,6 +21,7 @@ public class AddingTodoItemSteps {
     WebDriver driver;
     @Before("@webtest")
     public void setupDriver(){
+        WebDriverManager.chromedriver().setup();
         driver = new ChromeDriver();
     }
     @After("@webtest")
@@ -43,7 +45,4 @@ public class AddingTodoItemSteps {
 
         assertThat(displayedItems).containsExactlyElementsOf(todoItems);
     }
-
-
-
 }

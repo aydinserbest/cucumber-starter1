@@ -3,7 +3,7 @@
 Feature: Order a coffee more
   In order to save time when I pick up my morning coffee
   As a coffee lover
-  I want to be able to rder my coffee in advance
+  I want to be able to order my coffee in advance
 
   Background:
     Given Cathy has a Caffeinate-Me account
