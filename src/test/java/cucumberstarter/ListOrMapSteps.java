@@ -64,4 +64,12 @@ public class ListOrMapSteps {
 
         }
     }
+
+    @And("Mellow orders for following items")
+    public void mellowOrdersForFollowingItems(Map<String, Integer> orderedItems) {
+        for (String field : orderedItems.keySet()) {
+            int expected = orderedItems.get(field);
+            System.out.println(expected);
+        }
+    }
 }

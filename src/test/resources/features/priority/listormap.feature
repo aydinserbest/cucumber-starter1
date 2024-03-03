@@ -7,30 +7,33 @@ Feature: list or map
   Background:
     Given Cathy has a Caffeinate-Me account
 
-    @smokingtest
+  @smokingtest
   Scenario: Buyer orders a coffee when they are far to the coffee shop
     And John is 300 meters from the coffee shop
     # asLists
     When John orders for following items
-      | espresso| 2       |
-      | cappuccino | 1    |
+      | espresso   | 2 |
+      | cappuccino | 1 |
     # asMaps
     And When Brew orders for following items
-      | product | quantity|
-      | espresso| 2       |
-      | cappuccino | 1    |
+      | product    | quantity |
+      | espresso   | 2        |
+      | cappuccino | 1        |
     # asMap
     And When Mellow orders for following items
-      | product | espresso|
-      | quantity| 2       |
+      | product  | espresso |
+      | quantity | 2        |
     # asList
     Then the order should contain the following products:
-      |espresso|
-      |cappuccino|
+      | espresso   |
+      | cappuccino |
     And  Mike orders for following items
-      | product | quantity|
-      | espresso| 2       |
-      | cappuccino | 1    |
+      | product    | quantity |
+      | espresso   | 2        |
+      | cappuccino | 1        |
+    And Mellow orders for following items
+      | product  | espresso |
+      | quantity | 2        |
     And He should know that the coffee is: "Normal"
 
 
