@@ -23,11 +23,13 @@ public class AddingTodoItemSteps {
 
     DisplayedItemList displayedItemList;
     Actor actor;
+
     @Managed
     WebDriver driver;
 
     @Given("{word} has an empty todo list")
     public void actorHasAnEmptyTodoList(String actorName) {
+        System.out.println("sss");
         actor = Actor.named(actorName).whoCan(BrowseTheWeb.with(driver));
         actor.attemptsTo(Navigate.toHomePage());
     }
