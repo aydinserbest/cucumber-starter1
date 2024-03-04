@@ -11,7 +11,7 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <serenity-core.version>4.1.3</serenity-core.version>
         <serenity-cucumber.version>4.1.3</serenity-cucumber.version>
-        <serenity-maven-plugin.version>4.1.0</serenity-maven-plugin.version>
+        <serenity-maven-plugin.version>4.1.3</serenity-maven-plugin.version>
         <serenity.version>4.1.3</serenity.version>
     </properties>
     <dependencies>

@@ -71,5 +71,16 @@ public class ListOrMapSteps {
             int expected = orderedItems.get(field);
             System.out.println(expected);
         }
+        for (Map.Entry<String, Integer> entry : orderedItems.entrySet()) {
+            String key = entry.getKey();
+            Integer value = entry.getValue();
+
+        }
+        for (Integer value : orderedItems.values()) {
+            System.out.println(value);
+        }
+
+
+
     }
 }
