@@ -22,10 +22,10 @@ public class AddingTodoItemSteps {
     AddItemActions addItem;
 
     DisplayedItemList displayedItemList;
-    Actor actor;
 
     @Managed
     WebDriver driver;
+    Actor actor;
 
     @Given("{word} has an empty todo list")
     public void actorHasAnEmptyTodoList(String actorName) {
