@@ -43,7 +43,9 @@ public class AddingTodoItemSteps {
     }
     @When("He adds {string}")
     public void he_adds(String todoItem) {
+
         addItem.called(todoItem);
+        System.out.println(todoItem);
     }
     @Then("He should have he following item in his list:")
     public void he_should_have_he_following_item_in_his_list(List<String> todoItems) {
