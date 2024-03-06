@@ -15,12 +15,12 @@ Feature: list or map
       | espresso   | 2 |
       | cappuccino | 1 |
     # asMaps
-    And When Brew orders for following items
+    And Brew orders for following items
       | product    | quantity |
       | espresso   | 2        |
       | cappuccino | 1        |
     # asMap
-    And When Mellow orders for following items
+    And Mellow orders for following items
       | product  | espresso |
       | quantity | 2        |
     # asList
@@ -32,7 +32,7 @@ Feature: list or map
       | espresso   | 2        |
       | cappuccino | 1        |
     And Mellow orders for following items
-      | product  | espresso |
+      | product  | 1 |
       | quantity | 2        |
     And He should know that the coffee is: "Normal"
 

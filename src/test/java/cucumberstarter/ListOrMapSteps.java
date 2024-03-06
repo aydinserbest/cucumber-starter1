@@ -23,14 +23,14 @@ public class ListOrMapSteps {
         }
     }
 
-    @And("When Brew orders for following items")
+    @And("Brew orders for following items")
     public void whenBrewOrdersForFollowingItems(DataTable dataTable) {
         List<Map<String, String>> maps = dataTable.asMaps();
         for (Map<String, String> map : maps) {
             System.out.println(map.get("product") + " " + map.get("quantity"));
         }
     }
-    @And("When Mellow orders for following items")
+    @And("Mellow orders for following items")
     public void Mellow_Orders_For_FollowingItems(DataTable dataTable) {
         Map<String, String> map = dataTable.asMap();
         System.out.println(map.get("product")+" "+map.get("quantity"));
@@ -65,11 +65,14 @@ public class ListOrMapSteps {
         }
     }
 
-    @And("Mellow orders for following items")
-    public void mellowOrdersForFollowingItems(Map<String, Integer> orderedItems) {
-        for (String field : orderedItems.keySet()) {
-            int expected = orderedItems.get(field);
-            System.out.println(expected);
-        }
-    }
+//    @And("Mellow orders for following items")
+//    public void mellowOrdersForFollowingItems(DataTable orderedItems) {
+//        Map<String, String> map = orderedItems.asMap();
+//        System.out.println(map.get("product"));
+////
+////        for (String field : orderedItems.keySet()) {
+////            int expected = orderedItems.get(field);
+////            System.out.println(expected);
+////        }
+//    }
 }
